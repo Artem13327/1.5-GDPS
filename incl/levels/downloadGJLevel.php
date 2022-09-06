@@ -82,15 +82,15 @@ if(!is_numeric($levelID)){
 		}else{
 		    if(!empty($desc)) {
 		        if ($rateDate != 0 && ($result["starStars"] > 0 || $result["starFeatured"] == 1)) {
-                    $desc = $ep->remove(base64_decode($desc)) . " (Uploaded " . $uploadDate . ", updated " . $updateDate . ", rated " . $rateDate . ". Average star vote - $starVote)";
+                    $desc = $ep->remove(base64_decode($desc)) . "";
                 } else {
-		            $desc = $ep->remove(base64_decode($desc)) . " (Uploaded " . $uploadDate . ", updated " . $updateDate . ". Average star vote - $starVote)";
+		            $desc = $ep->remove(base64_decode($desc)) . "";
                 }
 		    } else {
 		        if ($rateDate != 0 && ($result["starStars"] > 0 || $result["starFeatured"] == 1)) {
-                    $desc = "Uploaded " . $uploadDate . ", updated " . $updateDate . ", rated" . $rateDate . ". Average star vote - $starVote";
+                    $desc = "";
                 } else {
-		            $desc = "Uploaded " . $uploadDate . ", updated " . $updateDate . ". Average star vote - $starVote";
+		            $desc = "";
 		        }
 		    }
 		}

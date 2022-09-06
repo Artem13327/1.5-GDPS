@@ -1,6 +1,6 @@
 <?php
-$servername = "server name";
-$username = "UserName";
-$password = "password";
-$dbname = "Database Name";
+$servername = "SECRET INFORMATION HIDDEN";
+$username = "SECRET INFORMATION HIDDEN";
+$password = "SECRET INFORMATION HIDDEN";
+$dbname = "SECRET INFORMATION HIDDEN";
 ?>
