@@ -9,8 +9,6 @@ require_once "../lib/XORCipher.php";
 require_once "../lib/GJPCheck.php";
 require_once "../lib/exploitPatch.php";
 $ep = new exploitPatch();
-require_once "../misc/commands.php";
-$cmds = new Commands();
 $gjp = $ep->remove($_POST["gjp"]);
 $userName = $ep->remove($_POST["userName"]);
 $comment = $ep->remove($_POST["comment"]);
@@ -42,9 +40,6 @@ if(!empty($_POST["accountID"]) AND $_POST["accountID"]!="0"){
 $userID = $mainLib->getUserID($id, $userName);
 $uploadDate = time();
 $decodecomment = base64_decode($comment);
-if($cmds->doCommands($id, $decodecomment, $levelID)){
-	exit("-1");
-}
 if($id != "" AND $comment != ""){
 	$query = $db->prepare("INSERT INTO comments (userName, comment, levelID, userID, timeStamp, percent) VALUES (:userName, :comment, :levelID, :userID, :uploadDate, :percent)");
 	if($register == 1){
