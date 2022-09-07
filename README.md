@@ -21,6 +21,6 @@ Using this for cloud save encryption - https://github.com/defuse/php-encryption 
 
 Most of the stuff in generateHash.php has been figured out by pavlukivan and Italian APK Downloader, so credits to them
 
-Cvolton for making this server software in the first place, epic stuff dude
+Cvolton for making this server software in the first place, epic stuff dude https://github.com/Cvolton/GMDprivateServer GNU General Public License v3.0
 
 Top Week ingame made possible by Absolute
