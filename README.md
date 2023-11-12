@@ -1,7 +1,7 @@
-# 1.6 GDPS
-Basically a Geometry Dash Server Emulator but for 1.6
+Внимание! Я особо не буду поддерживать этот код, а также возможно этот не соблюдает законы о хранение данных некоторых страз, над этим думайте сами
 
-Supported version of Geometry Dash: 1.0-1.6 (I assume :P)
+# 1.5 GDPS
+Basically a Geometry Dash Server Emulator but for 1.5
 
 Required version of PHP: 5.4+ (tested up to 7.3.11 by Cvolton)
 
